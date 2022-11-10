@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Management</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>Welcome back, Oliver</h1>
+            <p id="tasksRemaining"></p>
+        </div>
+        <div class="createLists">
+            <p class="createNewList"> <span class="circle plus"></span> Create new list</p>
+        </div>
+        <div class="lists">
+            <!-- <div class="createdLists">
+                <p class="list-content">Health</p>
+                <p class="list-content">Wealth</p>
+                <p class="list-content">Development</p>  
+            </div> -->
+        </div>
+        <div class="input-container">
+            <form action="" id="form" class="form">
+                <input name="taskName" type="text" id="inputTask" placeholder="Add a new task...">
+                <input name="noteName" type="text" id="inputNote" placeholder="Description...">
+
+                <button id="addToDo"></button>
+                <!-- <hr> -->
+            </form>
+        </div>
+        
+        <div class="tasks-container">
+            <div id="toDoContainer"></div>
+        </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
