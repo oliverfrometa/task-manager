@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="style.css">
     <title>Task Management</title>
 </head>
 <body>
-    <div class="wrapper">
 
-        <div class="header">
-            <h1>Welcome back, Oliver</h1>
-            <p id="tasksRemaining"></p>
-        </div>
-        <div class="createLists">
-            <p class="createNewList"> <span class="circle plus"></span> Create new list</p>
-        </div>
-        <div class="lists">
-            <!-- <div class="createdLists">
-                <p class="list-content">Health</p>
-                <p class="list-content">Wealth</p>
-                <p class="list-content">Development</p>  
-            </div> -->
-        </div>
-        <div class="input-container">
-            <form action="" id="form" class="form">
-                <input name="taskName" type="text" id="inputTask" placeholder="Add a new task...">
-                <input name="noteName" type="text" id="inputNote" placeholder="Description...">
+    <main class="site-wrapper">
+        <section class="left">
+            <div class="header">
+                <h1>Welcome back, Oliver</h1>
+            </div>
+            <div class="shit">
+                <div id="categoriesContainer">
+                    <p>Your categories</p>
+                    <div id="categories">
+                
+                    </div>
+                </div>
+                <div id="tasksContainer">
+                
+                    <span class="material-symbols-outlined add-icon">add_circle</span>
+                    <div id="tasks">
+                
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <button id="addToDo"></button>
-                <!-- <hr> -->
-            </form>
-        </div>
-        
-        <div class="tasks-container">
-            <div id="toDoContainer"></div>
-        </div>
-    </div>
+        <section class="right">
+            <div class="header">
+                <h1>Current Tasks</h1>
+                <p id="tasksRemaining"></p>
+            </div>
+            <div class="tasks">
+                <!-- <p id="noTasks">You currently have no tasks</p> -->
+                <div class="tasks-styling">
+                    <input type="checkbox" name="" id="">
+                    <div class="task-text">
+                        <p>New Task</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, quidem doloribus. Quo officia, ab voluptatum placeat doloribus minima exercitationem natus blanditiis ratione possimus est illum, similique deleniti accusantium laborum voluptas.</p>
+                    </div>
+                </div>
+            </div>
 
-    
+        </section>
+    </main>
+
+
 
     <script src="app.js"></script>
 </body>
